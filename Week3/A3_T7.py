@@ -11,28 +11,21 @@ Valinta = input("Your choice: ")
 if Valinta == "1":
     print("Using one multi-branced decision structure.")
     if Value >= 400:
-        print(f"Result is {Value + 44}")
+        Value = Value + 44
     elif Value >= 200:
-        print(f"Result is {Value + 22}")
+        Value = Value + 22
     elif Value >= 100:
-        print(f"Result is {Value + 11}")
-    else:
-        print(f"Result is {Value}")
+        Value = Value + 11
+    print(f"Result is {Value}")
 elif Valinta == "2":
     print("Using multiple independent if-statements structure.")
     if Value >= 400:
-        Value2 = Value + 44
-    else: 
-        Value2 = Value
-    if Value2 >= 200:
-        Value3 = Value2 + 22
-    else:
-        Value3 = Value2
-    if Value3 >= 100:
-        Value4 = Value3 + 11
-    else:
-        Value4 = Value3
-    print(f"Result is {Value4}")
+        Value = Value + 44
+    if Value >= 200:
+        Value = Value + 22
+    if Value >= 100:
+        Value = Value + 11
+    print(f"Result is {Value}")
 elif Valinta == "0":
     print("Exiting...")
 else:
